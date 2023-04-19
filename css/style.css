@@ -6,7 +6,7 @@ li{list-style-type:none;}
 li{color:white;}
 .fondoParraforojo{background-color: red;font-weight: bold;
                   font-size: 20px; text-align: justify;width:50%;margin:20px;
-                  border-radius:10px;opacity:0.8;}
+                  border-radius:10px;}
 nav ul li{display:inline-block;padding:30px;}
 .mb20{margin-bottom:20px;}
 .mt20{margin-top:20px;}
@@ -14,7 +14,9 @@ nav ul li{display:inline-block;padding:30px;}
 .p40{padding:40px}
 .p70{padding:70px;}
 .p200{padding:200px;}
-.cenElement{text-align:center;}
+
+
+
 .sameProImhComunidad{width:100%;height:500px;}
 /*esta clase servira para darle forma al los espacion de la pestana de nosotros*/
 .backDescripJuac{background-color:grey;padding:5px;margin:10px;border-radius:20px;background-clip:text;}
@@ -40,10 +42,17 @@ a{color:white;font-size: 25px;text-decoration:none;}
 header, ul, footer{display:flex;}
 .jusConBetween{justify-content:space-between;}
 
+.rightObject{display:flex;
+    flex-direction:row;
+    justify-content:right;
+    align-items:center;
+    }
+
 
 /*BOX MODEL*/
 li{padding:20px;}
 header{justify-content:space-between;margin-top:40px;margin-bottom:40px;}
+header{background-color: black;position:sticky;top:0;}
 
 
 
@@ -70,6 +79,10 @@ header{grid-area: header;}
 main{grid-area: main;}
 footer{grid-area:footer;}
 header, ul, footer{display:flex;}
+
+.cenElement{text-align:center;}
+.pt40{padding-top:40px;}
+.mt80{margin-top:80px;}
 
 /*GRID HEADER*/
 
@@ -295,6 +308,10 @@ justify-content:center;align-items:center;}
         justify-content:space-around;
         align-items:center;
     }
+
+    .mb20{margin-bottom:20px;}
+    .mt20{margin-top:20px;}
+    
 
     /*MOBILE SERVICIOS*/
 
