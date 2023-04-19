@@ -21,6 +21,8 @@ nav ul li{display:inline-block;padding:30px;}
 .p30l{position:30px left ;}
 form{display:flex;flex-direction:column;}
 main div h2{font-size:30px;}
+.ubicarTxt{display:flex;flex-direction:column;
+justify-content:center;align-items:center;}
 
 /*PROPIEDDES GENERALES DEL BODY*/
 body{background-color: black;font-family: 'Montserrat', sans-serif;}
@@ -100,13 +102,23 @@ header, ul, footer{display:flex;}
 
 
 .imgFluid{width:100%;height:auto;}
+.centrarObject{display:flex;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+}
+.centrarObjectCol{display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
 
 /*GRID MAIN COMUNIDAD*/
 
 .gridMainComunidad{
     display:grid;
     grid-template-areas:
-    "tituloComunidad totuloComunidad"
+    "tituloComunidad tituloComunidad"
     "tituloSsaintM tituloSsaintM"
     "parrafoSsaintM imgSsaintM"
     "tituloSrenC tituloSrenC"
@@ -117,7 +129,7 @@ header, ul, footer{display:flex;}
     "imgSarWas parrafoSarWas";
     grid-template-columns:50% 50% ;
     grid-template-rows:auto auto auto auto auto auto auto auto auto;
-    grid-column-gap:10px
+    
 }
 .tituloComunidad{grid-area:tituloComunidad}
 .tituloSsaintM{grid-area:tituloSsaintM}
@@ -194,21 +206,23 @@ justify-content:center;align-items:center;}
 .gridMainContacto{
     display:grid;
     grid-template-areas:
-    "tituloContacto tituloContaccto"
+    "tituloContacto tituloContacto"
     "parrafoInvitacion parrafoInvitacion"
     "videoInvitacion videoInvitacion"
+    "DanosInfo DanosInfo"
     "formRegTitulo formRegTitulo"
     "formReg teEsperamos"
     "dondeNen dondeNen"
     "iframeLoc datosContacto";
     grid-template-columns:50% 50%;
-    grid-template-rows:auto auto auto auto auto auto auto;
+    grid-template-rows:auto auto auto auto auto auto auto auto;
     grid-column-gap:10px;
 }
 
 .tituloContacto{grid-area:tituloContacto}
 .parrafoInvitacion{grid-area:parrafoInvitacion}
 .videoInvitacion{grid-area:videoInvitacion}
+.DanosInfo{grid-area:DanosInfo;}
 .formRegTitulo{grid-area:formRegTitulo}
 .formReg{grid-area:formReg}
 .teEsperamos{grid-area:teEsperamos}
@@ -222,21 +236,85 @@ justify-content:center;align-items:center;}
 @media (max-width:768px){
     header,main,footer{display:flex;
     flex-direction:column;align-items:center;}
-    ul{display:flex;padding:0;}
+    ul{display:flex;flex-direction:row;align-items:center;justify-content:center;flex-wrap:wrap;}
+    
+
+
+    /*MOBILE GENERAL*/
+
+    .imgAndVideoAjuste{width:100%;height:auto;}
+    .centrarElementos{align-items:center;}
+    .CentrarInfoContacto{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .centrarObject{display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        }
+    .centrarObjectCol{display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+
+    .txtCenter{text-align:center;}
+    .pm10{margin:30px;}
+
+    /*MOBILE INDEX*/
 
     .gridMainIndex{
         display:flex;
-        flex-direction:column;}
-    .gridMainComunidad{}
-    .gridMainNosotros{}
-    .gridMainServicios{}
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .centrarTxtRojo{display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        }
 
-    .gridMainContacto{
-        display:grid;
-        grid-template-columns:100%;
-        grid-template-rows:repeat(7,auto);
+     /*MOBILE COMUNIDAD*/
+
+    .gridMainComunidad{display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    }
+
+
+    /*MOBILE NOSOTROS*/
+
+    .gridMainNosotros{display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    }
+
+    /*MOBILE SERVICIOS*/
+
+    .gridMainServicios{display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    }
+
+    /*MOBILE CONTACTO*/
+
+    .gridMainContacto{display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
     } 
-   .videoInvitacion{width:100%;height:auto;} 
+
+    
+   
+    
     
    
 }
