@@ -3,7 +3,8 @@ li{list-style-type:none;}
 *{margin: 0;padding: 0;}
 .textFormulario{color:white;}
 .textNoticias{font-size: 20px;}
-li{color:white;}
+li{color:white;padding:10px;}
+a{color:white;font-size: 25px;text-decoration:none;transition:1s all;}
 .fondoParraforojo{background-color: red;font-weight: bold;
                   font-size: 20px; text-align: justify;width:50%;margin:20px;
                   border-radius:10px;}
@@ -14,6 +15,12 @@ nav ul li{display:inline-block;padding:30px;}
 .p40{padding:40px}
 .p70{padding:70px;}
 .p200{padding:200px;}
+a:hover{
+    font-size:35px;
+    background-color:red;
+    padding:20px;
+    margin:10px;
+}
 
 
 
@@ -32,7 +39,7 @@ h1{color:white;font-size: 40px;font-style: italic;}
 h2{color:white;font-size: 70px;font-weight:bolder;}
 h3{color:white;font-size: 20px;font-style: italic;}
 p{color:white;text-decoration:none;line-height:30px;text-align:justify;}
-a{color:white;font-size: 25px;text-decoration:none;}
+
 .sizeLogo{width: 150px;height: 150px;border-radius:100px;}
 
 /*PROPIEDADES DEL FOOTER*/
