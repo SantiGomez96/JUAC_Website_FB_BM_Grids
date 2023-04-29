@@ -20,6 +20,7 @@ a:hover{
     background-color:red;
     padding:20px;
     margin:10px;
+    border-radius:10px;
 }
 
 
@@ -38,7 +39,7 @@ body{background-color: black;font-family: 'Montserrat', sans-serif;}
 h1{color:white;font-size: 40px;font-style: italic;}
 h2{color:white;font-size: 70px;font-weight:bolder;}
 h3{color:white;font-size: 20px;font-style: italic;}
-p{color:white;text-decoration:none;line-height:30px;text-align:justify;}
+p{color:white;text-decoration:none;line-height:30px;text-align:justify;font-size:17px;}
 
 .sizeLogo{width: 150px;height: 150px;border-radius:100px;}
 
@@ -55,11 +56,24 @@ header, ul, footer{display:flex;}
     align-items:center;
     }
 
+    footer{background-image: linear-gradient(to top,red,black);}
+
 
 /*BOX MODEL*/
 li{padding:20px;}
-header{justify-content:space-between;margin-top:40px;margin-bottom:40px;}
-header{background-color: black;position:sticky;top:0;}
+header{justify-content:space-between;margin-bottom:40px;}
+header{background-image: linear-gradient(to bottom,red,black);position:sticky;top:0;}
+
+/*ANIMATION*/
+
+.scale{transition:1s all;}
+
+.scale:hover{transform:scale(1.5,1.5);}
+
+    
+
+
+
 
 
 
